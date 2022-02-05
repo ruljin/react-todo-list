@@ -16,9 +16,16 @@ export const CreateTodo = ({ handleAddTodo }) => {
 
 	return (
 		<div className={styles.container}>
-			<Input value={value} onChange={(e) => setValue(e.target.value)} />
+			<Input
+				value={value}
+				placeholder='What do you have to do...'
+				onChange={(e) => setValue(e.target.value)}
+			/>
 			<div className={styles.actions}>
-				<Button variant='positive' onClick={handleCreateClick}>
+				<Button
+					variant='positive'
+					onClick={handleCreateClick}
+					disabled={!value.length}>
 					Create
 				</Button>
 				<Button variant='negative' onClick={() => setValue('')}>

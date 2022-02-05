@@ -5,7 +5,12 @@
 
 .actions {
 	width: 100%;
+	margin-top: 30px;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+}
+
+.actions button:first-child {
+	margin-right: 10px;
 }
