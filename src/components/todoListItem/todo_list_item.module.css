@@ -1,5 +1,6 @@
 .item {
-	height: 80px;
+	max-width: 350px;
+	min-height: 80px;
 	margin-bottom: 10px;
 	padding: 8px 8px;
 	background-color: #fff;
@@ -24,4 +25,9 @@
 
 .actions button:first-child {
 	margin-right: 10px;
+}
+
+.text {
+	text-align: center;
+	overflow-wrap: anywhere;
 }

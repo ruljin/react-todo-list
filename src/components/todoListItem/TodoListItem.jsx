@@ -6,7 +6,7 @@ import styles from './todo_list_item.module.css';
 export const TodoListItem = ({ todo, handleRemoveTodo }) => (
 	<li className={styles.item}>
 		<div className={styles.container}>
-			<span>{todo}</span>
+			<span className={styles.text}>{todo}</span>
 			<div className={styles.actions}>
 				<Button variant='positive' onClick={() => handleRemoveTodo(todo)}>
 					<FontAwesomeIcon icon={faCheck} />
