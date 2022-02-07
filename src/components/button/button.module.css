@@ -1,34 +1,36 @@
+@import '../../variables.css';
+
 .button {
 	min-width: 80px;
 	padding: 15px 40px;
-	color: #fff;
+	color: var(--color-white);
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	border: none;
-	box-shadow: 2px 2px 8px -4px #000;
+	box-shadow: 2px 2px 8px -4px var(--color-black);
 	cursor: pointer;
 }
 
 .positive {
-	background-color: #2ecc71;
+	background-color: var(--color-positive);
 }
 
 .positive:hover {
-	background-color: #05ca57;
+	background-color: var(--color-positive-hover);
 }
 
 .positive:disabled,
 .positive:disabled:hover {
-	background-color: #2ecc71;
+	background-color: var(--color-positive);
 	opacity: 0.5;
 	cursor: default;
 }
 
 .negative {
-	background-color: #cb4e4e;
+	background-color: var(--color-negative);
 }
 
 .negative:hover {
-	background-color: #c92121;
+	background-color: var(--color-negative-hover);
 }

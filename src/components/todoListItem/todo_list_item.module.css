@@ -1,15 +1,17 @@
+@import '../../variables.css';
+
 .item {
 	max-width: 350px;
 	min-height: 80px;
 	margin-bottom: 10px;
 	padding: 8px 8px;
-	background-color: #fff;
+	background-color: var(--color-white);
 	border-radius: 4px;
-	box-shadow: 2px 2px 8px -4px #000;
+	box-shadow: 2px 2px 8px -4px var(--color-black);
 }
 
 .done {
-	background-color: #80f87ae6;
+	background-color: var(--color-done);
 }
 
 .container {
