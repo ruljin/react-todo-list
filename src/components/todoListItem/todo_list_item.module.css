@@ -8,6 +8,10 @@
 	box-shadow: 2px 2px 8px -4px #000;
 }
 
+.done {
+	background-color: #80f87ae6;
+}
+
 .container {
 	height: 100%;
 	display: flex;
