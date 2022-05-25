@@ -9,16 +9,7 @@ type CreateTodoProps = {
 };
 
 export const CreateTodo = ({ handleAddTodo }: CreateTodoProps) => {
-	const [value, setValue] = useState("");
-
-	const handleCreateClick = () => {
-		if (!value.length) {
-			return;
-		}
-
-		handleAddTodo(value);
-		setValue("");
-	};
+	const { value, setValue, handleCreateClick } = useCreateTodo(handleAddTodo);
 
 	return (
 		<div className={styles.todo__container}>
@@ -42,4 +33,19 @@ export const CreateTodo = ({ handleAddTodo }: CreateTodoProps) => {
 			</div>
 		</div>
 	);
+};
+
+const useCreateTodo = (handleAddTodo: (todo: string) => void) => {
+	const [value, setValue] = useState("");
+
+	const handleCreateClick = () => {
+		if (!value.length) {
+			return;
+		}
+
+		handleAddTodo(value);
+		setValue("");
+	};
+
+	return { value, setValue, handleCreateClick } as const;
 };
