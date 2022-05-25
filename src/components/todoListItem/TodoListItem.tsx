@@ -17,13 +17,15 @@ export const TodoListItem = ({
 	handleCompleteTodo,
 	handleRemoveTodo,
 }: TodoListItemProps) => {
-	const classes = clsx(styles.item, { [styles.done]: todo.status === "done" });
+	const classes = clsx(styles.todo__item, {
+		[styles["todo__item--done"]]: todo.status === "done",
+	});
 
 	return (
 		<li className={classes}>
-			<div className={styles.container}>
-				<span className={styles.text}>{todo.todo}</span>
-				<div className={styles.actions}>
+			<div className={styles.todo__container}>
+				<span className={styles.todo__text}>{todo.todo}</span>
+				<div className={styles.todo__actions}>
 					<Button
 						variant="positive"
 						disabled={todo.status === "done"}

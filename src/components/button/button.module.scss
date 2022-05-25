@@ -10,27 +10,27 @@
 	border: none;
 	box-shadow: 2px 2px 8px -4px var(--color-black);
 	cursor: pointer;
-}
 
-.positive {
-	background-color: var(--color-positive);
-}
+	&--positive {
+		background-color: var(--color-positive);
 
-.positive:hover {
-	background-color: var(--color-positive-hover);
-}
+		&:hover {
+			background-color: var(--color-positive-hover);
+		}
 
-.positive:disabled,
-.positive:disabled:hover {
-	background-color: var(--color-positive);
-	opacity: 0.5;
-	cursor: default;
-}
+		&:disabled,
+		&:disabled:hover {
+			background-color: var(--color-positive);
+			opacity: 0.5;
+			cursor: default;
+		}
+	}
 
-.negative {
-	background-color: var(--color-negative);
-}
+	&--negative {
+		background-color: var(--color-negative);
 
-.negative:hover {
-	background-color: var(--color-negative-hover);
+		&:hover {
+			background-color: var(--color-negative-hover);
+		}
+	}
 }

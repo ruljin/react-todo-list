@@ -14,7 +14,7 @@ export const TodosList = ({
 	handleCompleteTodo,
 	handleRemoveTodo,
 }: TodoListProps) => (
-	<ul className={styles.list}>
+	<ul className={styles.todo__list}>
 		{list.map((todo) => (
 			<TodoListItem
 				key={todo.id}

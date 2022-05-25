@@ -21,7 +21,7 @@ export const CreateTodo = ({ handleAddTodo }: CreateTodoProps) => {
 	};
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.todo__container}>
 			<Input
 				value={value}
 				placeholder="What do you have to do..."
@@ -29,7 +29,7 @@ export const CreateTodo = ({ handleAddTodo }: CreateTodoProps) => {
 					setValue(e.target.value)
 				}
 			/>
-			<div className={styles.actions}>
+			<div className={styles.todo__actions}>
 				<Button
 					variant="positive"
 					onClick={handleCreateClick}

@@ -17,8 +17,8 @@ export const Button = ({
 	onClick,
 }: ButtonProps) => {
 	const classes = clsx(styles.button, {
-		[styles.positive]: variant === "positive",
-		[styles.negative]: variant === "negative",
+		[styles["button--positive"]]: variant === "positive",
+		[styles["button--negative"]]: variant === "negative",
 	});
 
 	return (
