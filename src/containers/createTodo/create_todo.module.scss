@@ -1,0 +1,23 @@
+.todo {
+	&__container {
+		flex-direction: column;
+		display: flex;
+	}
+
+	&__actions {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-top: 30px;
+		width: 100%;
+
+		& button:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	&__text {
+		overflow-wrap: anywhere;
+		text-align: center;
+	}
+}

@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.input {
+	box-shadow: 2px 2px 8px -4px $color-black;
+	border: none;
+	border-radius: 4px;
+	width: 275px;
+	height: 20px;
+	padding: 8px 16px;
+	font-size: 18px;
+}

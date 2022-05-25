@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.todo {
+	&__item {
+		margin-bottom: 10px;
+		box-shadow: 2px 2px 8px -4px $color-black;
+		border-radius: 4px;
+		max-width: 350px;
+		min-height: 80px;
+		padding: 8px 8px;
+		background-color: $color-white;
+
+		&--done {
+			background-color: $color-done;
+		}
+	}
+
+	&__container {
+		align-items: center;
+		flex-direction: column;
+		display: flex;
+		height: 100%;
+	}
+
+	&__actions {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-top: 10px;
+		width: 100%;
+
+		& button:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	&__text {
+		overflow-wrap: anywhere;
+		text-align: center;
+	}
+}
