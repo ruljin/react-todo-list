@@ -7,6 +7,23 @@ import "./app.scss";
 import type { Todo } from "./models/Todo";
 
 export const App = () => {
+	const { list, handleAddTodo, handleRemoveTodo, handleCompleteTodo } =
+		useApp();
+
+	return (
+		<div className="page">
+			<Header text="React Todo List" />
+			<CreateTodo handleAddTodo={handleAddTodo} />
+			<TodosList
+				list={list}
+				handleCompleteTodo={handleCompleteTodo}
+				handleRemoveTodo={handleRemoveTodo}
+			/>
+		</div>
+	);
+};
+
+const useApp = () => {
 	const [list, setList] = useState<Todo[]>([]);
 
 	const handleAddTodo = (todo: string) => {
@@ -24,15 +41,5 @@ export const App = () => {
 		setList(newList);
 	};
 
-	return (
-		<div className="page">
-			<Header text="React Todo List" />
-			<CreateTodo handleAddTodo={handleAddTodo} />
-			<TodosList
-				list={list}
-				handleCompleteTodo={handleCompleteTodo}
-				handleRemoveTodo={handleRemoveTodo}
-			/>
-		</div>
-	);
+	return { list, handleAddTodo, handleRemoveTodo, handleCompleteTodo } as const;
 };
