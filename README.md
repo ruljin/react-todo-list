@@ -31,6 +31,8 @@ The main page contains a todo list app with:
 
 ## Technologies
 
+Application has been moved from CSS/JS to SCSS/TS on 25.05.2022.
+
 - HTML,
 - CSS,
 - JS,
