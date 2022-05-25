@@ -3,34 +3,34 @@
 .button {
 	min-width: 80px;
 	padding: 15px 40px;
-	color: var(--color-white);
+	color: $color-white;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	border: none;
-	box-shadow: 2px 2px 8px -4px var(--color-black);
+	box-shadow: 2px 2px 8px -4px $color-black;
 	cursor: pointer;
 
 	&--positive {
-		background-color: var(--color-positive);
+		background-color: $color-positive;
 
 		&:hover {
-			background-color: var(--color-positive-hover);
+			background-color: $color-positive-hover;
 		}
 
 		&:disabled,
 		&:disabled:hover {
-			background-color: var(--color-positive);
+			background-color: $color-positive;
 			opacity: 0.5;
 			cursor: default;
 		}
 	}
 
 	&--negative {
-		background-color: var(--color-negative);
+		background-color: $color-negative;
 
 		&:hover {
-			background-color: var(--color-negative-hover);
+			background-color: $color-negative-hover;
 		}
 	}
 }
