@@ -1,14 +1,14 @@
 @import "../../variables.scss";
 
 .button {
+	box-shadow: 2px 2px 8px -4px $color-black;
+	border: none;
 	min-width: 80px;
 	padding: 15px 40px;
-	color: $color-white;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	border: none;
-	box-shadow: 2px 2px 8px -4px $color-black;
+	color: $color-white;
 	cursor: pointer;
 
 	&--positive {
@@ -20,8 +20,8 @@
 
 		&:disabled,
 		&:disabled:hover {
-			background-color: $color-positive;
 			opacity: 0.5;
+			background-color: $color-positive;
 			cursor: default;
 		}
 	}
